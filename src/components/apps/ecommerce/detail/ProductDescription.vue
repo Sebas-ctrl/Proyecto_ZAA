@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-    <h5 class="text-h5 font-weight-semibold">
+    <!-- <h5 class="text-h5 font-weight-semibold">
         Sed at diam elit. Vivamus tortor odio, pellentesque eu tincidunt a, aliquet sit amet lorem pellentesque eu tincidunt a, aliquet sit
         amet lorem.
     </h5>
@@ -12,5 +12,5 @@
         Vivamus quis metus in nunc semper efficitur eget vitae diam. Proin justo diam, venenatis sit amet eros in, iaculis auctor magna.
         Pellentesque sit amet accumsan urna, sit amet pretium ipsum. Fusce condimentum venenatis mauris et luctus. Vestibulum ante ipsum
         primis in faucibus orci luctus et ultrices posuere cubilia curae;
-    </p>
+    </p> -->
 </template>

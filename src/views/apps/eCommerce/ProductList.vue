@@ -99,10 +99,10 @@ const itemsSelected = ref<Item[]>([]);
                         </div>
                     </template>
                     <template #item-isStock="{ isStock }">
-                        <div class="player-wrapper">
+                        <!-- <div class="player-wrapper">
                             <v-chip color="success" v-if="isStock" size="small"> In Stock </v-chip>
                             <v-chip color="error" v-else size="small"> Out of Stock </v-chip>
-                        </div>
+                        </div> -->
                     </template>
 
                     <template #item-operation="item">

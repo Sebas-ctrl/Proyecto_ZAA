@@ -5,23 +5,13 @@ import BaseBreadcrumb from '@/components/shared/BaseBreadcrumb.vue';
 import RelatedProducts from '@/components/apps/ecommerce/detail/RelatedProducts.vue';
 import ProductTab from '@/components/apps/ecommerce/detail/ProductTab.vue';
 
-const page = ref({ title: 'Products' });
-const breadcrumbs = ref([
-    {
-        text: 'Ecommerce',
-        disabled: false,
-        href: '#'
-    },
-    {
-        text: 'product Page',
-        disabled: true,
-        href: '#'
-    }
-]);
+const page = ref({ title: 'EQUIPOS EN EXISTENCIA' });
+
+
 </script>
 
 <template>
-    <BaseBreadcrumb :title="page.title" :breadcrumbs="breadcrumbs"></BaseBreadcrumb>
+    <BaseBreadcrumb :title="page.title" ></BaseBreadcrumb>
     <v-row>
         <v-col cols="12">
             <v-card elevation="10">

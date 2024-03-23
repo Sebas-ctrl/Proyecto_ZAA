@@ -102,9 +102,9 @@ function AddCart(p: number) {
             <!-- -------------------------------------- -->
             <!-- Left Sidebar -->
             <!-- -------------------------------------- -->
-            <!-- <template v-slot:leftpart>
+            <template v-slot:leftpart>
                 <ProductFilters />
-            </template> -->
+            </template>
             <!-- -------------------------------------- -->
             <!-- Right Side Content Part -->
             <!-- -------------------------------------- -->
@@ -112,7 +112,7 @@ function AddCart(p: number) {
                 <perfect-scrollbar>
                     <v-sheet class="pa-4">
                         <div class="d-flex gap-2 align-center mb-4 justify-space-between">
-                            <h5 class="text-h5 d-none d-lg-flex font-weight-semibold">Products</h5>
+                            <h5 class="text-h5 d-none d-lg-flex font-weight-semibold">EQUIPOS EN MANTENIMIENTO</h5>
 
                             <v-sheet  width="300">
                                 <v-text-field

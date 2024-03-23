@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue';
 import { useEcomStore } from '@/stores/apps/eCommerce';
 import { useRoute } from 'vue-router';
-import { Carousel, Slide, Navigation } from 'vue3-carousel';
+import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import product1 from '@/assets/images/products/s1.jpg';
 import product2 from '@/assets/images/products/s2.jpg';
@@ -79,7 +79,7 @@ function slideTo(val) {
             </template>
         </Carousel>
 
-        <Carousel
+        <!-- <Carousel
             id="thumbnails"
             :currentSlide="currentSlide"
             :transition="500"
@@ -97,7 +97,7 @@ function slideTo(val) {
             <template #addons>
                 <Navigation />
             </template>
-        </Carousel>
+        </Carousel> -->
     </div>
 </template>
 <style lang="scss">

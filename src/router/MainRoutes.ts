@@ -16,6 +16,22 @@ const MainRoutes = {
             component: () => import('@/views/dashboards/analytical/Analytical.vue'),
         },
         {
+            name: 'Recursos Materialess',
+            path: '/dashboards/RecursosM',
+            component: () => import('@/views/apps/RecursosM/Equipamiento/Products.vue'),
+        },
+       
+        {
+            name: 'Recursos Materialesss',
+            path: '/dashboards/RecursosMa',
+            component: () => import('@/views/apps/RecursosM/Mantenimiento/ProductList.vue'),
+        },
+        {
+            name: 'Recursos Materiales',
+            path: '/dashboards/RecursosMat',
+            component: () => import('@/views/apps/RecursosM/Equipamiento_Instalaciones/ProductDetails.vue'),
+        },
+        {
             name: 'Ecommerce',
             path: '/dashboards/ecommerce',
             component: () => import('@/views/dashboards/ecommerce/Ecommerce.vue'),

@@ -2,29 +2,8 @@
 import { ref, onMounted, computed } from 'vue';
 import { useEcomStore } from '@/stores/apps/eCommerce';
 
-const panel = ref([0, 1, 2, 3, 4]);
-const priceSort = [
-    {
-        label: '$10 - $50',
-        price: '50'
-    },
-    {
-        label: '$50 - $100',
-        price: '100'
-    },
-    {
-        label: '$100 - $150',
-        price: '151'
-    },
-    {
-        label: '$150 - $200',
-        price: '200'
-    },
-    {
-        label: 'Over $200',
-        price: '250'
-    }
-];
+
+   
 
 const store = useEcomStore();
 
@@ -76,7 +55,7 @@ function filterReset() {
 
 
 </script>
-<template>
+<!-- <template>
     <v-sheet class="pa-4 pt-1">
         <v-expansion-panels v-model="panel" multiple>
             <v-expansion-panel elevation="0">
@@ -189,7 +168,7 @@ function filterReset() {
         </v-expansion-panels>
         <v-btn color="primary" @click="filterReset()"  block class="mt-5">Reset Filters</v-btn>
     </v-sheet>
-</template>
+</template> -->
 <style lang="scss">
 .custom-accordion {
     padding: 18px 2px;
