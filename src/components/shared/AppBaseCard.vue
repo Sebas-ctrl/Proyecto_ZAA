@@ -39,13 +39,13 @@ const sDrawer = ref(false);
     position: relative;
     overflow: hidden;
 }
-.left-part {
-    width: 320px;
-    border-right: 1px solid rgb(var(--v-theme-borderColor));
-    min-height: 500px;
-    transition: 0.1s ease-in;
-    flex-shrink: 0;
-}
+// .left-part {
+//     width: 320px;
+//     border-right: 1px solid rgb(var(--v-theme-borderColor));
+//     min-height: 500px;
+//     transition: 0.1s ease-in;
+//     flex-shrink: 0;
+// }
 .v-theme--light {
     .left-part {
         background: white;
@@ -56,9 +56,9 @@ const sDrawer = ref(false);
         background: #2b2b2b;
     }
 }
-.right-part {
-    width: 100%;
-    min-height: 500px;
-    position: relative;
-}
+// .right-part {
+//     width: 100%;
+//     min-height: 500px;
+//     position: relative;
+// }
 </style>

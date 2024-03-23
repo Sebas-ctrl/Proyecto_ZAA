@@ -40,10 +40,10 @@ const getCart = computed(() => {
                         <div class="py-5 px-4 border rounded-md">
                             <v-radio value="paid" color="primary" class="label-op-1">
                                 <template v-slot:label>
-                                    <div>
+                                    <!-- <div>
                                         <h6 class="text-h6 mb-1">Fast Delivery ($5.00)</h6>
                                         <span class="d-block text-subtitle-1">Delivery on Friday 5 Jun</span>
-                                    </div>
+                                    </div> -->
                                 </template>
                             </v-radio>
                         </div>
@@ -195,10 +195,10 @@ const getCart = computed(() => {
             <h5 class="text-h5">Cart Item</h5>
             <div class="d-flex align-center gap-2 my-3" v-for="item in getCart" :key="item.name">
                 <img alt="product" class="rounded-md custom-img-box" :src="item.image" />
-                <div class="ma-2">
+                <!-- <div class="ma-2">
                     <h6 class="text-h6">{{ item.name }}</h6>
                     <span class="text-subtitle-1">${{ item.salePrice * item.qty }}</span>
-                </div>
+                </div> -->
             </div>
             <OrderSummaryVue />
             <div v-for="address in store.addresses" :key="address.id">

@@ -21,7 +21,7 @@ onMounted(() => {
         <v-card-item>
             <h5 class="text-h5 mb-6">Order Summery</h5>
 
-            <div class="d-flex align-center justify-space-between my-5">
+            <!-- <div class="d-flex align-center justify-space-between my-5">
                 <h6 class="text-h6 font-weight-regular">Sub Total</h6>
                 <h6 class="font-weight-semibold text-h6">${{ store.subTotal }}</h6>
             </div>
@@ -39,7 +39,7 @@ onMounted(() => {
             <div class="d-flex align-center justify-space-between my-5">
                 <h6 class="text-h6">Total</h6>
                 <h6 class="font-weight-semibold text-h5">${{ store.total }}</h6>
-            </div>
+            </div> -->
         </v-card-item>
     </v-card>
 </template>

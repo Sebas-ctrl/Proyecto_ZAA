@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import ProductDescription from './ProductDescription.vue';
-import ProductReview from './ProductReview.vue';
+// import ProductDescription from './ProductDescription.vue';
+// import ProductReview from './ProductReview.vue';
 
 const tab = ref(null);
 </script>
 
-<template>
+<!-- <template>
     <v-card elevation="10">
         <v-card-item>
             <v-tabs v-model="tab" color="primary" class="border-bottom">
@@ -25,4 +25,4 @@ const tab = ref(null);
             </div>
         </v-card-item>
     </v-card>
-</template>
+</template> -->

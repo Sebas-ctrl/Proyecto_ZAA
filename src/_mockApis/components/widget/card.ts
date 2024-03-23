@@ -117,7 +117,7 @@ const musicCard: musicCards[] = [
 /*--Products Cards--*/
 const productsCard: productsCards[] = [
     {
-        title: 'Boat Headphone',
+        title: 'Mancuerna 2.4 kg',
         link: '/',
         photo: proimg1,
         salesPrice: 375,
@@ -125,7 +125,7 @@ const productsCard: productsCards[] = [
         rating: 4
     },
     {
-        title: 'MacBook Air Pro',
+        title: 'Maquina de Pecho',
         link: '/',
         photo: proimg2,
         salesPrice: 650,
@@ -133,7 +133,7 @@ const productsCard: productsCards[] = [
         rating: 5
     },
     {
-        title: 'Red Valvet Dress',
+        title: 'Tabla Abdominal Básica',
         link: '/',
         photo: proimg3,
         salesPrice: 150,
@@ -141,7 +141,7 @@ const productsCard: productsCards[] = [
         rating: 3
     },
     {
-        title: 'Cute Soft Teddybear',
+        title: 'Minibandas',
         link: '/',
         photo: proimg4,
         salesPrice: 285,
