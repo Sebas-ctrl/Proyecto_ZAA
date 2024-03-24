@@ -42,7 +42,7 @@ const itemsSelected = ref<Item[]>([]);
                         <v-text-field
                             type="text"
                             variant="outlined"
-                            placeholder="Search Product"
+                            placeholder="Buscar Productos"
                             v-model="searchValue"
                             density="compact"
                             hide-details
