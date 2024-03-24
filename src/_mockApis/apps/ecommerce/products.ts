@@ -53,7 +53,7 @@ const products: Products[] = [
     {
         id: 4,
         image: product4,
-        name: 'Mancuerna 2.4 kg "Disponible"',
+        name: 'Mancuerna "Disponible"',
         description: chance.paragraph({ sentences: 2 }),
         
         popularity: chance.natural(),
@@ -64,7 +64,7 @@ const products: Products[] = [
     {
         id: 5,
         image: product5,
-        name: 'Maquina de Pecho "Mantenimiento"',
+        name: 'Maquina "Mantenimiento"',
         description: chance.paragraph({ sentences: 2 }),
         rating: chance.floating({ min: 0.1, max: 5.0 }),
         
