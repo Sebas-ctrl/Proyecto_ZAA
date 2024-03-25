@@ -4,7 +4,7 @@ import Darklogo from '@/assets/images/logos/bulls_logo.svg';
 </script>
 <template>
     <div class="logo">
-        <RouterLink to="/">
+        <RouterLink to="/home">
             <img :src="Darklogo" alt="home" />
         </RouterLink>
     </div>
