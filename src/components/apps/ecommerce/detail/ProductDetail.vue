@@ -90,7 +90,7 @@ function selectColor(e) {
                 <v-row class="mt-6">
                     <v-col cols="12" sm="12">
                         <v-btn block size="large" color="primary" to="/ecommerce/checkout" @click="store.AddToCart(getProduct)"
-                            >Buy Now</v-btn
+                            >Agregar</v-btn
                         >
                     </v-col>
                         <!-- <v-col cols="12" sm="4">

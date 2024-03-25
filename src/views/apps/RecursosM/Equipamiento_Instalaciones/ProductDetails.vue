@@ -12,18 +12,10 @@ import BlogCard from "@/components/dashboards/analytical/BlogCard.vue";
 import WeeklyStats from "@/components/dashboards/analytical/WeeklyStats.vue";
 import DailyActivities from "@/components/dashboards/analytical/DailyActivities.vue";
 
-const page = ref({ title: "Analytical" });
+const page = ref({ title: "EQUIPOS GIMNASIO" });
 const breadcrumbs = ref([
-  {
-    text: "Dashboard",
-    disabled: false,
-    href: "#",
-  },
-  {
-    text: "Analytical",
-    disabled: true,
-    href: "#",
-  },
+  
+   
 ]);
 </script>
 
@@ -60,11 +52,11 @@ const breadcrumbs = ref([
     </v-col> -->
     <!---Weekly states-->
     <v-col cols="12" sm="12" lg="4">
-      <WeeklyStats/>
+      <!-- <WeeklyStats/> -->
     </v-col>
     <!---Daily Activities-->
     <v-col cols="12" sm="12" lg="4">
-      <DailyActivities/>
+      <!-- <DailyActivities/> -->
     </v-col>
   </v-row>
 </template>

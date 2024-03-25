@@ -5,7 +5,7 @@ import { getPrimary, getSecondary } from '@/utils/UpdateColors';
 const chartOptions = computed(() => {
   return {
     series: [25, 35, 35],
-    labels: ["2021", "2020", "2019", "2018"],
+    labels: ["Mantenimiento", "Disponibles", "Sin Funcionar", "2018"],
     chart: {
       height: 280,
       type: "donut",
@@ -46,8 +46,8 @@ const chartOptions = computed(() => {
   }
 });
 
-const select = ref("March");
-const items = ref(["March", "April", "May", "June"]);
+const select = ref("Enero");
+const items = ref(["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Noviembre", "Diciembre"]);
 </script>
 
 <template>
@@ -57,7 +57,7 @@ const items = ref(["March", "April", "May", "June"]);
   <v-card elevation="10" >
     <v-card-text>
       <div class="d-flex align-center mb-5">
-        <h2 class="text-h4">Total Sales</h2>
+        <h2 class="text-h4">Mantenimiento</h2>
         <div class="ml-auto">
           <v-select
             v-model="select"
@@ -71,10 +71,10 @@ const items = ref(["March", "April", "May", "June"]);
       <v-divider></v-divider>
       <div class="border-top mt-5 d-flex align-center">
         <h6 class="text-subtitle-1 text-medium-emphasis font-weight-medium">
-          Sales Yearly
+          Equipos por Mes
         </h6>
         <div class="ml-auto">
-          <h3 class="text-h4 font-weight-semibold">8,364,398</h3>
+          <h3 class="text-h4 font-weight-semibold">364</h3>
         </div>
       </div>
       <div class="mt-5 pt-5 position-relative">
@@ -84,7 +84,7 @@ const items = ref(["March", "April", "May", "June"]);
           :options="chartOptions"
           :series="chartOptions.series"
         ></apexchart>
-        <ShoppingCartIcon size="35"  class="total-sales-icon"/>
+        <!-- <ShoppingCartIcon size="35"  class="total-sales-icon"/> -->
 
       </div>
       <div class="d-flex align-center justify-space-between mt-12">
@@ -93,7 +93,7 @@ const items = ref(["March", "April", "May", "June"]);
             <span class="text-overline">
               <i class="mdi mdi-brightness-1 text-secondary mx-1"></i>
             </span>
-            <span class="text-subtitle-1 textSecondary font-weight-medium mr-1">2021</span>
+            <span class="text-subtitle-1 textSecondary font-weight-medium mr-1">Mant.</span>
           </span>
         </div>
         <div class="d-flex align-center px-2">
@@ -101,7 +101,7 @@ const items = ref(["March", "April", "May", "June"]);
             <span class="text-overline">
               <i class="mdi mdi-brightness-1 text-primary mx-1"></i>
             </span>
-            <span class="text-subtitle-1 textSecondary font-weight-medium mr-1">2020</span>
+            <span class="text-subtitle-1 textSecondary font-weight-medium mr-1">Dispo.</span>
           </span>
         </div>
         <div class="d-flex align-center px-2">
@@ -110,7 +110,7 @@ const items = ref(["March", "April", "May", "June"]);
               <i class="mdi mdi-brightness-1 text-warning mx-1"></i>
             </span>
             <span class="text-subtitle-1 textSecondary font-weight-medium mr-1"
-              >2019
+              >Descom.
             </span>
           </span>
         </div>
