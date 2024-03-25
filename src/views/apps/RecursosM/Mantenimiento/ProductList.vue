@@ -25,7 +25,7 @@
     data() {
       return {
         aparatos: [
-          { id: 1, nombre: 'Cinta de correr', descripcion: 'Una cinta para correr estándar', enMantenimiento: false, reparado: false, imagen: 'url_de_la_imagen' },
+          { id: 1, nombre: 'Cinta de correr', descripcion: 'Una cinta para correr estándar', enMantenimiento: false, reparado: false, imagen: 'src/imagenes/s2.jpg' },
           { id: 2, nombre: 'Bicicleta estática', descripcion: 'Una bicicleta estática para entrenamiento', enMantenimiento: false, reparado: true, imagen: 'url_de_la_imagen' },
           { id: 3, nombre: 'Máquina de pesas', descripcion: 'Una máquina de pesas para ejercicios de fuerza', enMantenimiento: true, reparado: false, imagen: 'url_de_la_imagen' }
         ]
