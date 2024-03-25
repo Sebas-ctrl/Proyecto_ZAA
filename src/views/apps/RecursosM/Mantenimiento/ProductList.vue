@@ -1,161 +1,67 @@
-<script setup lang="ts">
-import { ref, onMounted, computed } from 'vue';
-import AppBaseCard from '@/components/shared/AppBaseCard.vue';
-//Types
-import type { Products } from '@/types/apps/EcommerceType';
-import ProductItemVue from '@/components/apps/ecommerce/listing/ProductItem.vue';
-import { useEcomStore } from '@/stores/apps/eCommerce';
-import { orderBy, filter, includes } from 'lodash';
-
-import ProductEmplty from '@/components/apps/ecommerce/listing/ProductEmplty.vue';
-import ProductFilters from '@/components/apps/ecommerce/listing/ProductFilters.vue';
-
-
-// ecommmerce
-const store = useEcomStore();
-
-onMounted(() => {
-    store.fetchProducts();
-});
-
-const getProducts = computed(() => {
-    return store.products;
-});
-
-const selected = ref('Price:Low to High');
-const searchValue = ref('');
-
-const getVisibleProduct = (
-    products: Products | any,
-    sortBy: string,
-    search: string | any,
-    gender: string | unknown,
-    category: string | unknown,
-    colors: string | unknown,
-    price: string | unknown,
-    //price:string | unknown
-) => {
-    // SORT BY
-    if (sortBy === 'Popularity') {
-        products = orderBy(products, ['rating'], ['desc']);
-    }
-    if (sortBy === 'Price:High to Low') {
-        products = orderBy(products, ['salePrice'], ['desc']);
-    }
-    if (sortBy === 'Price:Low to High') {
-        products = orderBy(products, ['salePrice'], ['asc']);
-    }
-    if (sortBy === 'Fresh Arrivals') {
-        products = orderBy(products, ['created'], ['asc']);
-    }
-    if (gender) {
-        products = products.filter((product: Products | any) => {
-            return product.gender.includes(gender);
-        });
-    }
-    if (price) {
-        products = products.filter((product: Products | any) => {
-            return product.price.includes(price);
-        });
-    }
-    if (category !== 'all') {
-        products = products.filter((product: Products | any) => {
-            return product.categories.includes(category);
-        });
-    }
-
-    if (search) {
-        products = products.filter((product: Products) => {
-            return product.name.toLowerCase().includes(search.value.toLowerCase());
-        });
-    }
-
-    //FILTER PRODUCTS BY COLORS
-    if (colors !== 'All') {
-        products = products.filter((_product: Products | any) => _product.colors.includes(colors));
-    }
-
-    //FILTER PRODUCTS BY PRICE
-    // if (price !== 'All') {
-    //   const minMax = price ? price.split('-') : '';
-    //   products = products.filter((_product: Products | any) =>
-    //     price ? _product.price >= minMax[0] && _product.price <= minMax[1] : true,
-    //   );
-    // }
-
-    return products;
-};
-
-const filteredProducts = computed(() => {
-    return getVisibleProduct(getProducts.value, selected.value, searchValue, store.gender, store.category, store.color,store.price);
-});
-const toggleSide = ref(false);
-
-function AddCart(p: number) {
-    store.AddToCart(p);
-}
-</script>
-
 <template>
-    <v-card elevation="10" class="inside-left-sidebar overflow-hidden">
-        <AppBaseCard>
-            <!-- -------------------------------------- -->
-            <!-- Left Sidebar -->
-            <!-- -------------------------------------- -->
-            <template v-slot:leftpart>
-                <ProductFilters />
-            </template>
-            <!-- -------------------------------------- -->
-            <!-- Right Side Content Part -->
-            <!-- -------------------------------------- -->
-            <template v-slot:rightpart>
-                <perfect-scrollbar>
-                    <v-sheet class="pa-4">
-                        <div class="d-flex gap-2 align-center mb-4 justify-space-between">
-                            <h5 class="text-h5 d-none d-lg-flex font-weight-semibold">EQUIPOS EN MANTENIMIENTO</h5>
-
-                            <v-sheet  width="300">
-                                <v-text-field
-                                    variant="outlined"
-                                    v-model="searchValue"
-                                    prepend-inner-icon="mdi-magnify"
-                                    placeholder="Buscar Productos"
-                                    hide-details
-                                    density="compact"
-                                    color="primary"
-                                ></v-text-field>
-                            </v-sheet>
-                        </div>
-                        <v-row v-if="filteredProducts.length >= 1">
-                            <v-col cols="12" lg="4" sm="6" v-for="product in filteredProducts" :key="product.id">
-                                <ProductItemVue
-                                    :name="product.name"
-                                    :image="product.image"
-                                    :desc="product.description"
-                                    :salePrice="product.salePrice"
-                                    :offerPrice="product.offerPrice"
-                                    :rating="product.rating"
-                                    :goto="product.id"
-                                    @handlecart="AddCart(product)"
-                                />
-                            </v-col>
-                        </v-row>
-                        <ProductEmplty v-else />
-                    </v-sheet>
-                </perfect-scrollbar>
-            </template>
-            <!-- -------------------------------------- -->
-            <!-- Mobile Sidebar -->
-            <!-- -------------------------------------- -->
-            <template v-slot:mobileLeftContent> <ProductFilters /> </template>
-        </AppBaseCard>
-    </v-card>
-</template>
-
-<style scoped lang="scss">
-@media (max-width: 1279px) {
-    .v-card {
-        position: unset;
+    <div>
+      <h2>Mantenimiento a equipos </h2>
+      <ul>
+        <li v-for="aparato in aparatos" :key="aparato.id">
+          <div class="aparato-info">
+            <img :src="aparato.imagen" alt="Imagen de {{ aparato.nombre }}" class="aparato-imagen">
+            <div class="aparato-details">
+              <h3>{{ aparato.nombre }}</h3>
+              <p>{{ aparato.descripcion }}</p>
+              <span v-if="aparato.enMantenimiento">(En Mantenimiento)</span>
+              <span v-else-if="aparato.reparado">(Reparado)</span>
+              <span v-else>(Disponible)</span>
+              <button @click="marcarEnMantenimiento(aparato)" v-if="!aparato.enMantenimiento && !aparato.reparado">En Mantenimiento</button>
+              <button @click="marcarReparado(aparato)" v-if="aparato.enMantenimiento">Reparado</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        aparatos: [
+          { id: 1, nombre: 'Cinta de correr', descripcion: 'Una cinta para correr estándar', enMantenimiento: false, reparado: false, imagen: 'url_de_la_imagen' },
+          { id: 2, nombre: 'Bicicleta estática', descripcion: 'Una bicicleta estática para entrenamiento', enMantenimiento: false, reparado: true, imagen: 'url_de_la_imagen' },
+          { id: 3, nombre: 'Máquina de pesas', descripcion: 'Una máquina de pesas para ejercicios de fuerza', enMantenimiento: true, reparado: false, imagen: 'url_de_la_imagen' }
+        ]
+      };
+    },
+    methods: {
+      marcarEnMantenimiento(aparato) {
+        aparato.enMantenimiento = true;
+      },
+      marcarReparado(aparato) {
+        aparato.enMantenimiento = false;
+        aparato.reparado = true;
+      }
     }
-}
-</style>
+  };
+  </script>
+  
+  <style scoped>
+  .aparato-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .aparato-imagen {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .aparato-details {
+    flex: 1;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  </style>
+  
