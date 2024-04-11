@@ -39,7 +39,16 @@ const breadcrumbs = ref([
       <TheSalesOverview/>
     </v-col> -->
      <!---Total sales-->
-    <v-col cols="12" sm="12" lg="4">
+    <v-col cols="12" sm="12" lg="6">
+      <TotalSales/>
+    </v-col>
+    <v-col cols="12" sm="12" lg="6">
+      <TotalSales/>
+    </v-col>
+    <v-col cols="12" sm="12" lg="6">
+      <TotalSales/>
+    </v-col>
+    <v-col cols="12" sm="12" lg="6">
       <TotalSales/>
     </v-col>
      <!---Product month table-->
