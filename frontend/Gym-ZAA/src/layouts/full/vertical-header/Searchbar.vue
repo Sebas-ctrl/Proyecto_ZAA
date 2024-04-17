@@ -3,10 +3,8 @@ import { SearchIcon } from 'vue-tabler-icons';
 import { searchSugg } from '@/_mockApis/headerData';
 </script>
 
-<template>
-    <!-- ---------------------------------------------- -->
-    <!-- search1 -->
-    <!-- ------------------------------------------------>
+<!-- <template>
+    
     <v-menu :close-on-content-click="false">
         <template v-slot:activator="{ props }">
             <v-btn icon variant="text" class="custom-hover-primary ml-2" size="small" color="primary" v-bind="props">
@@ -36,4 +34,4 @@ import { searchSugg } from '@/_mockApis/headerData';
             </perfect-scrollbar>
         </v-sheet>
     </v-menu>
-</template>
+</template> -->
