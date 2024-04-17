@@ -1,4 +1,4 @@
-import type { recentTransaction,productPerformance,topCards } from "@/types/components/dashboards/EcommerceDash";
+import type { recentTransaction,productPerformance, topCards } from "@/types/components/dashboards/EcommerceDash";
 /*import tabler icons*/
 import {  BoxIcon, ChartBarIcon, CheckIcon, CreditCardIcon, CurrencyDollarIcon, RefreshIcon, ShieldIcon, UsersIcon, } from 'vue-tabler-icons';
 import img1 from '@/assets/images/products/1.jpg';

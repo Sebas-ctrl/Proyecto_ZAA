@@ -62,3 +62,4 @@ function AddCart(p: any) {
     padding: 10px;
 }
 </style>
+../listing/ProductItem2.vue
