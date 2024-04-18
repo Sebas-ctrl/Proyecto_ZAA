@@ -179,10 +179,10 @@ const quickLink: quickLinksType[] = [
         title: 'Blog Design',
         href: '/auth/blog/posts'
     },
-    {
-        title: 'Shopping Cart',
-        href: '/ecommerce/checkout'
-    }
+    // {
+    //     title: 'Shopping Cart',
+    //     href: '/ecommerce/checkout'
+    // }
 ];
 
 // 

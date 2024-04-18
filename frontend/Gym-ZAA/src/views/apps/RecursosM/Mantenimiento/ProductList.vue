@@ -15,6 +15,7 @@ import ProductFilters from '@/components/apps/ecommerce/listing/ProductFilters.v
 const store = useEcomStore();
 
 onMounted(() => {
+    
     store.fetchProducts();
 });
 
