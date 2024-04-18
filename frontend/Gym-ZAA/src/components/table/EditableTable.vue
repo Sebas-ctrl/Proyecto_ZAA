@@ -4,6 +4,23 @@ import { useContactStore } from '@/stores/apps/contact';
 
 import contact from '@/_mockApis/apps/contact';
 
+
+// fetch('http://localhost:8000/gimnasio/api/v1Equipo/')
+//             .then(res => {
+//                 if (!res.ok) {
+//                     throw new Error('Error al obtener los registros');
+//                 }
+//                 return res.json();
+//             })
+//             .then(equipo => {
+// 		console.log(equipo)
+//             })
+//             .catch(error => {
+//                 console.error('Error al obtener los registros: ' + error);
+//             });
+
+
+
 const store = useContactStore();
 
 onMounted(() => {
@@ -81,13 +98,13 @@ const formTitle = computed(() => {
 <template>
     <v-row>
         <v-col cols="12" lg="4" md="6">
-            <v-text-field density="compact" v-model="search" label="Search Contacts" hide-details variant="outlined"></v-text-field>
+            <v-text-field density="compact" v-model="search" label="Buscar Equipos" hide-details variant="outlined"></v-text-field>
         </v-col>
         <v-col cols="12" lg="8" md="6" class="text-right">
             <v-dialog v-model="dialog" max-width="500">
                 <template v-slot:activator="{ props }">
                     <v-btn color="primary" v-bind="props" flat class="ml-auto">
-                        <v-icon class="mr-2">mdi-account-multiple-plus</v-icon>Add Contact
+                        <v-icon class="mr-2">mdi-account-multiple-plus</v-icon>Agregar Equipo
                     </v-btn>
                 </template>
                 <v-card>
@@ -106,46 +123,48 @@ const formTitle = computed(() => {
                                         variant="outlined"
                                         hide-details
                                         v-model="editedItem.userinfo"
-                                        label="User info"
+                                        label="Descripcion"
+                                        type="text"
                                     ></v-text-field>
                                 </v-col>
-                                <v-col cols="12" sm="6">
+                                <!-- <v-col cols="12" sm="6">
                                     <v-text-field
                                         variant="outlined"
                                         hide-details
                                         v-model="editedItem.usermail"
-                                        label="User email"
-                                        type="email"
+                                        label="Equipo"
+                                        type="text"
                                     ></v-text-field>
-                                </v-col>
-                                <v-col cols="12" sm="6">
+                                </v-col> -->
+                               <v-col cols="12" sm="6">
                                     <v-text-field
                                         variant="outlined"
                                         hide-details
                                         v-model="editedItem.phone"
-                                        label="Phone"
-                                        type="phone"
+                                        label="Nombre Equipo"
+                                        type="text"
                                     ></v-text-field>
-                                </v-col>
+                                </v-col> 
                                 <v-col cols="12" sm="6">
                                     <v-text-field
                                         variant="outlined"
                                         hide-details
                                         v-model="editedItem.jdate"
-                                        label="Joining Date"
+                                        label="Fecha"
+                                        type="text"
                                     ></v-text-field>
                                 </v-col>
-                                <v-col cols="12" sm="6">
+                                <!-- <v-col cols="12" sm="6">
                                     <v-text-field variant="outlined" hide-details v-model="editedItem.role" label="Role"></v-text-field>
-                                </v-col>
+                                </v-col> -->
                                 <v-col cols="12" sm="12">
-                                    <v-select
+                                    <!-- <v-select
                                         variant="outlined"
                                         hide-details
                                         :items="rolesbg"
                                         v-model="editedItem.rolestatus"
                                         label="Role Background"
-                                    ></v-select>
+                                    ></v-select> -->
                                 </v-col>
                             </v-row>
                         </v-form>
@@ -153,13 +172,13 @@ const formTitle = computed(() => {
 
                     <v-card-actions class="pa-4">
                         <v-spacer></v-spacer>
-                        <v-btn color="error" @click="close">Cancel</v-btn>
+                        <v-btn color="error" @click="close">Cancelar</v-btn>
                         <v-btn
                             color="secondary"
-                            :disabled="editedItem.userinfo == '' || editedItem.usermail == ''"
+                            :disabled="editedItem.jdate == '' || editedItem.jdate == ''"
                             variant="flat"
                             @click="save"
-                            >Save</v-btn
+                            >Guardar</v-btn
                         >
                     </v-card-actions>
                 </v-card>
@@ -170,11 +189,10 @@ const formTitle = computed(() => {
         <thead>
             <tr>
                 <th class="text-subtitle-1 font-weight-semibold">Id</th>
-                <th class="text-subtitle-1 font-weight-semibold">UserInfo</th>
-                <th class="text-subtitle-1 font-weight-semibold">Phone</th>
-                <th class="text-subtitle-1 font-weight-semibold">Joining Date</th>
-                <th class="text-subtitle-1 font-weight-semibold">Role</th>
-                <th class="text-subtitle-1 font-weight-semibold">Actions</th>
+                <th class="text-subtitle-1 font-weight-semibold">Equipo</th>
+                <th class="text-subtitle-1 font-weight-semibold">Descripcion</th>
+                <th class="text-subtitle-1 font-weight-semibold">Fecha</th>
+                <th class="text-subtitle-1 font-weight-semibold">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -182,9 +200,9 @@ const formTitle = computed(() => {
                 <td class="text-subtitle-1">{{ item.id }}</td>
                 <td>
                     <div class="d-flex align-center py-4">
-                        <div>
+                        <!-- <div>
                             <v-img :src="item.avatar" width="45px" class="rounded-circle img-fluid"></v-img>
-                        </div>
+                        </div> -->
 
                         <div class="ml-5">
                             <h4 class="text-h6">{{ item.userinfo }}</h4>
@@ -194,19 +212,19 @@ const formTitle = computed(() => {
                 </td>
                 <td class="text-subtitle-1">{{ item.phone }}</td>
                 <td class="text-subtitle-1">{{ item.jdate }}</td>
-                <td>
+                <!-- <td>
                     <v-chip :color="item.rolestatus" size="small" label>{{ item.role }}</v-chip>
-                </td>
+                </td> -->
                 <td>
                     <div class="d-flex align-center">
-                        <v-tooltip text="Edit">
+                        <v-tooltip text="Editar">
                             <template v-slot:activator="{ props }">
                                 <v-btn icon flat @click="editItem(item)" v-bind="props"
                                     ><PencilIcon stroke-width="1.5" size="20" class="text-primary"
                                 /></v-btn>
                             </template>
                         </v-tooltip>
-                        <v-tooltip text="Delete">
+                        <v-tooltip text="Eliminar">
                             <template v-slot:activator="{ props }">
                                 <v-btn icon flat @click="deleteItem(item)" v-bind="props"
                                     ><TrashIcon stroke-width="1.5" size="20" class="text-error"
