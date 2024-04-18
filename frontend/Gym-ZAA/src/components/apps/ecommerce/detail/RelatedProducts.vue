@@ -40,7 +40,7 @@ function AddCart(p: any) {
 </script>
 
 <template>
-    <h4 class="text-h4 mt-8 mb-4">Related Products</h4>
+    <h4 class="text-h4 mt-8 mb-4">EQUIPOS</h4>
 
     <v-row>
         <v-col v-for="product in getProducts?.slice(0, 4)" :key="product.id" cols="12" sm="6" lg="3">

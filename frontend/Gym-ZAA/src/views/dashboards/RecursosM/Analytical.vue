@@ -13,18 +13,18 @@ import WeeklyStats from "@/components/dashboards/analytical/WeeklyStats.vue";
 import DailyActivities from "@/components/dashboards/analytical/DailyActivities.vue";
 import EditableTable from '@/components/table/EditableTable.vue';
 
-const page = ref({ title: "Analytical" });
+const page = ref({ title: "Equipos en Mantenimiento" });
 const breadcrumbs = ref([
-  {
-    text: "Dashboard",
-    disabled: false,
-    href: "#",
-  },
-  {
-    text: "Analytical",
-    disabled: true,
-    href: "#",
-  },
+  // {
+  //   text: "Dashboard",
+  //   disabled: false,
+  //   href: "#",
+  // },
+  // {
+  //   text: "Analytical",
+  //   disabled: true,
+  //   href: "#",
+  // },
 ]);
 </script>
 
@@ -45,7 +45,7 @@ const breadcrumbs = ref([
     </v-col> -->
     <v-row>
         <v-col cols="12">
-            <UiParentCard title="Editable Table">
+            <UiParentCard title="Editar Tabla">
                 <EditableTable />
             </UiParentCard>
         </v-col>
