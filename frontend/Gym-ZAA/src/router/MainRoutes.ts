@@ -24,7 +24,7 @@ const MainRoutes = {
         {
             name: 'Recursos Materialesss',
             path: '/dashboards/RecursosMa',
-            component: () => import('@/views/apps/RecursosM/Mantenimiento/ProductList.vue'),
+            component: () => import('@/views/dashboards/RecursosM/Analytical.vue'),
         },
         {
             name: 'Recursos Materiales',
