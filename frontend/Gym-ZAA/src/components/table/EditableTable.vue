@@ -103,7 +103,7 @@ const formTitle = computed(() => {
         <v-col cols="12" lg="8" md="6" class="text-right">
             <v-dialog v-model="dialog" max-width="500">
                 <template v-slot:activator="{ props }">
-                    <v-btn color="primary" v-bind="props" flat class="ml-auto">
+                    <v-btn color="secondary" v-bind="props" flat class="ml-auto">
                         <v-icon class="mr-2">mdi-account-multiple-plus</v-icon>Agregar Equipo
                     </v-btn>
                 </template>
