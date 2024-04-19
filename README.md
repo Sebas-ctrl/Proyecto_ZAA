@@ -28,5 +28,12 @@
 Optimizar la adquisición, administración y distribución de los recursos materiales necesarios para el funcionamiento eficiente y efectivo del gimnasio, asegurando un suministro oportuno y adecuado de equipos, materiales de limpieza, productos de higiene y cualquier otro recurso físico requerido, con el fin de garantizar un ambiente seguro, cómodo y atractivo para los clientes y empleados, al mismo tiempo que se minimizan los costos y se maximiza la utilización de los recursos disponibles.
 #
 ## Objetivos Especificos 
-Control de inventario: Desarrollar un sistema para registrar y monitorear el inventario de equipos de gimnasio, consumibles como toallas, productos de limpieza y otros materiales necesarios para el funcionamiento diario.
+1. Control de inventario: Desarrollar un sistema para registrar y monitorear el inventario de equipos de gimnasio, consumibles como toallas, productos de limpieza y otros materiales necesarios para el funcionamiento diario.
+2. Gestión de préstamos y devoluciones: Implementar un mecanismo para realizar préstamos de equipos o materiales a los usuarios del gimnasio y registrar las devoluciones de manera eficiente.
+3. Desarrollar un catálogo digital de productos que proporcione descripciones detalladas de cada equipo, consumible o material disponible en el gimnasio, facilitando a los usuarios la búsqueda y selección de los elementos necesarios para su uso.
+#
+## Alcance y Vision del area de Recursos Materiales 
+Gestionar de manera integral y eficiente todos los recursos materiales del gimnasio, desde el inventario y préstamos hasta el mantenimiento y control de calidad, con el objetivo de garantizar un entorno óptimo para los usuarios y una operación fluida y segura.
+
+
 
