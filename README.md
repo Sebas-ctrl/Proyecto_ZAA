@@ -90,18 +90,18 @@ El proyecto tiene como proposito una innovacion en la administración de un gimn
 ## Instalación y uso
 1. Clona este repositorio:
  ```
-git clone https://github.com/tu-usuario/nombre-repositorio.git
+git clone https://github.com/tu-usuario/nombre-repositorio.git](https://github.com/Amelipg01/Proyecto_ZAA.git
 
 ```
-3. Ubicarse en la carpeta de Front e instalar las dependencias:
+2. Ubicarse en la carpeta de Frontend e instalar las dependencias:
  ```
 npm install
 ```
-5. Ejecuta el siguiente comando para correr el proyecto:
+3. Ejecuta el siguiente comando para correr el proyecto:
 ```
 npm run dev
 ```
-7. Abre el navegador y accede a la liga mostrada 
+4. Abre el navegador y accede a la liga en pantalla 
 
 
 
