@@ -71,7 +71,7 @@ function editItem(item: any) {
 }
 function deleteItem(item: any) {
     const index = desserts.value.indexOf(item);
-    confirm('Are you sure you want to delete this item?') && desserts.value.splice(index, 1);
+    confirm('Estas seguro que quiere eliminar este Equipo?') && desserts.value.splice(index, 1);
 }
 
 function close() {
@@ -92,7 +92,7 @@ function save() {
 
 //Computed Property
 const formTitle = computed(() => {
-    return editedIndex.value === -1 ? 'New Contact' : 'Edit Contact';
+    return editedIndex.value === -1 ? 'Agregar Equipo' : 'Editar Equipo';
 });
 </script>
 <template>
