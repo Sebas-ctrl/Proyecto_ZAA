@@ -20,6 +20,13 @@
   <img src="https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/d729c02e-aca8-437e-b643-8833ac7c1089" " style="display:block; margin:auto;">
 </p>
 
+<div align="center">
+  
+| LOGO DEl SITIO  | LOGO DE LA EMPRESA | 
+|:------------- |:---------------:| 
+<img src="https://github.com/loreasc2003/m4delProyecto/assets/163441777/75e27319-c2da-456b-8fc0-9bf3d29f6567" width="400" height="400">|<img src="https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/45618dd7-2911-4f68-bb91-07f24370d22d" width="400" height="300">|
+</div>
+
 ## Responsables 
 | Nombre | Cargo  | 
 |--- | --- | 
