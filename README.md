@@ -86,7 +86,22 @@ El proyecto tiene como proposito una innovacion en la administración de un gimn
 
 
 </div>
-</div>
+
+## Instalación y uso
+1. Clona este repositorio:
+ ```
+git clone https://github.com/tu-usuario/nombre-repositorio.git
+
+```
+3. Ubicarse en la carpeta de Front e instalar las dependencias:
+ ```
+npm install
+```
+5. Ejecuta el siguiente comando para correr el proyecto:
+```
+npm run dev
+```
+7. Abre el navegador y accede a la liga mostrada 
 
 
 
