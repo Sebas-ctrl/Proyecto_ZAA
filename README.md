@@ -3,7 +3,7 @@
   <img src="https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/b83cb003-a6a1-488d-b0a7-8276a62b0e9a" alt="Descripción de la imagen" style="display:block; margin:auto;">
 </p>
 <div align="center">
-  <h1>UNIVERSIDAD TECNOLOGICA DE XICOTEPEC DE JUAREZ</h1>
+  <h1>UNIVERSIDAD TECNOLOGICA DE XICOTEPEC DE JUÁREZ</h1>
 </div>
 <div align="center">
   <h1>Reporte Integrador - 
