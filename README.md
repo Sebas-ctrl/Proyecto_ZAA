@@ -90,7 +90,7 @@ El proyecto tiene como proposito una innovacion en la administración de un gimn
 ## Instalación y uso
 1. Clona este repositorio:
  ```
-git clone https://github.com/tu-usuario/nombre-repositorio.git](https://github.com/Amelipg01/Proyecto_ZAA.git
+git clone https://github.com/Amelipg01/Proyecto_ZAA.git
 
 ```
 2. Ubicarse en la carpeta de Frontend e instalar las dependencias:
