@@ -71,7 +71,7 @@ function editItem(item: any) {
 }
 function deleteItem(item: any) {
     const index = desserts.value.indexOf(item);
-    confirm('Are you sure you want to delete this item?') && desserts.value.splice(index, 1);
+    confirm('Estas seguro que quiere eliminar este Equipo?') && desserts.value.splice(index, 1);
 }
 
 function close() {
@@ -92,7 +92,7 @@ function save() {
 
 //Computed Property
 const formTitle = computed(() => {
-    return editedIndex.value === -1 ? 'New Contact' : 'Edit Contact';
+    return editedIndex.value === -1 ? 'Agregar Equipo' : 'Editar Equipo';
 });
 </script>
 <template>
@@ -103,7 +103,7 @@ const formTitle = computed(() => {
         <v-col cols="12" lg="8" md="6" class="text-right">
             <v-dialog v-model="dialog" max-width="500">
                 <template v-slot:activator="{ props }">
-                    <v-btn color="primary" v-bind="props" flat class="ml-auto">
+                    <v-btn color="secondary" v-bind="props" flat class="ml-auto">
                         <v-icon class="mr-2">mdi-account-multiple-plus</v-icon>Agregar Equipo
                     </v-btn>
                 </template>

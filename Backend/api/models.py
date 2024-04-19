@@ -34,7 +34,7 @@ class Sucursal(models.Model):
     capacidad_maxima = models.IntegerField()
     total_empleados = models.IntegerField()
     horario_disponibilidad = models.CharField(max_length=100)
-    estatus = models.CharField(max_length=50)
+    Estatus = models.BooleanField(default=False)
     class Meta:
         db_table = 'sucursales'
     
@@ -43,7 +43,7 @@ class EquipoExistencia(models.Model):
     Equipo_ID = models.IntegerField()
     Area_ID = models.IntegerField()
     Color = models.CharField(max_length=50)
-    Estatus = models.CharField(max_length=50)
+    Estatus = models.BooleanField(default=False)
     Fecha_Asignacion = models.DateField()
     class Meta:
         db_table = 'equipos_existencias'
