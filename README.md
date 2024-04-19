@@ -65,5 +65,30 @@ El proyecto tiene como proposito una innovacion en la administración de un gimn
 8. MongoDB: Base de datos NoSQL utilizada para almacenar y gestionar datos de forma flexible y escalable, especialmente útil para aplicaciones con estructuras de datos dinámicas y no tabulares.
 9. MySQL Workbench: Herramienta de diseño de base de datos utilizada para modelar, visualizar y administrar la base de datos del sistema. Ayuda en el diseño inicial de la base de datos y en la administración continua de la misma.
 #
+## Sketches
+<div align="center">
+  
+![SK1](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/bfdd6ff6-fd97-4750-bb84-f7d07427040f)
+![SK2](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/0ad90c62-1244-44ed-8b8d-170be76ca34d)
+![SK3](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/69414af6-633c-4b1c-b33b-c44955e85e63)
+
+</div>
+
+
+#
+## Wireframes
+<div align="center">
+  
+![W9](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/e9cfa6e6-5e28-442e-9d6c-df54f95e6392)
+![W8](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/a89be9be-f498-4954-8e39-8c235f9ebc37)
+![W7](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/70ebcb4a-d630-474f-9da3-c04df7425762)
+![W6](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/ac6ac020-8ff2-4070-ae2f-191ccd18e144)
+
+
+</div>
+</div>
+
+
+
 
 
