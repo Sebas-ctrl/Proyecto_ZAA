@@ -65,9 +65,9 @@ function changeTab(e: string) {
                 <v-window-item value="tab-2" class="pa-1">
                     <StepSecond />
                     <v-row class="mt-3">
-                        <v-col cols="6">
+                        <!-- <v-col cols="6">
                             <v-btn color="primary" variant="tonal" @click="changeTab('tab-1')">Back</v-btn>
-                        </v-col>
+                        </v-col> -->
                         <v-col cols="6" class="text-right">
                             <v-btn color="primary" @click="changeTab('tab-3')">Place an Order</v-btn>
                         </v-col>
