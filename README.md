@@ -9,8 +9,11 @@
   <h1>Reporte Integrador - 
   Recursos Materiales</h1>
 </div>
+<div align="center">
+  <h2>Integrantes del equipo ZAA:</h2>
+</div>
 
-## Integrantes del equipo: 
+##
 ![grafico organigrama gratis empresa ilustracion moderno celeste](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/3c1e22a5-f691-44f2-b871-169fbc9897e2)
 #
 <p align="center">
@@ -43,5 +46,17 @@ El proyecto tiene como proposito una innovacion en la administración de un gimn
 #
 ## Api
 ![06fe3259-dd00-47da-9c1c-ad6d54ae6963](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/8211ac9d-c121-4507-8a2c-868daec0c729)
+#
+## Tecnologias Empleadas 
+1. Django: Framework de desarrollo web en Python, utilizado como el motor principal para construir la aplicación de administración de recursos materiales en el gimnasio.
+2. Python: Lenguaje de programación principal utilizado para escribir la lógica del backend y las funcionalidades del sistema.
+3. Vue.js: Framework progresivo de JavaScript utilizado para construir la interfaz de usuario interactiva y dinámica del frontend.
+4. HTML: Lenguaje de marcado utilizado para estructurar el contenido de las páginas web.
+5. JSON: Formato de intercambio de datos utilizado para almacenar y transmitir información entre el frontend y el backend, así como para configuraciones de la aplicación.
+6. GitHub: Plataforma de desarrollo colaborativo que proporciona control de versiones utilizando Git, utilizada para almacenar y gestionar el código fuente del proyecto.
+7. Visual Studio Code: Editor de código fuente utilizado para escribir, editar y depurar el código del proyecto. Proporciona herramientas y extensiones para el desarrollo web con Python, JavaScript y otros lenguajes.
+8. MongoDB: Base de datos NoSQL utilizada para almacenar y gestionar datos de forma flexible y escalable, especialmente útil para aplicaciones con estructuras de datos dinámicas y no tabulares.
+9. MySQL Workbench: Herramienta de diseño de base de datos utilizada para modelar, visualizar y administrar la base de datos del sistema. Ayuda en el diseño inicial de la base de datos y en la administración continua de la misma.
+#
 
 
