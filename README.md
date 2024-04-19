@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/de13660e-d811-42e6-8dbe-71c456389de0" alt="Descripción de la imagen" style="display:block; margin:auto;">
+  <img src="https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/b83cb003-a6a1-488d-b0a7-8276a62b0e9a" alt="Descripción de la imagen" style="display:block; margin:auto;">
 </p>
 <div align="center">
   <h1>UNIVERSIDAD TECNOLOGICA DE XICOTEPEC DE JUAREZ</h1>
@@ -34,5 +34,14 @@ Optimizar la adquisición, administración y distribución de los recursos mater
 #
 ## Alcance y Vision del area de Recursos Materiales 
 Gestionar de manera integral y eficiente todos los recursos materiales del gimnasio, desde el inventario y préstamos hasta el mantenimiento y control de calidad, con el objetivo de garantizar un entorno óptimo para los usuarios y una operación fluida y segura.
-# Acerca del Proyecto
+## Acerca del Proyecto
 El proyecto tiene como proposito una innovacion en la administración de un gimnasio, sin embargo el Area de Recursos Materiales en el gimnasio tiene como finalidad implementar un sistema integral para gestionar de manera eficiente todos los equipos, consumibles y materiales necesarios para el funcionamiento óptimo de nuestras instalaciones.
+#
+## Frontend 
+![77ecb1bd-a696-458b-a103-a6bb9d4ff96d](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/c4d4f3d8-5519-4584-96c4-30677167fd40)
+![74e5317b-777c-4b0c-9c4d-f92b669a720d](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/77f1fa4b-602a-42cf-a994-e218dbb566c1)
+#
+## Api
+![06fe3259-dd00-47da-9c1c-ad6d54ae6963](https://github.com/Amelipg01/Proyecto_ZAA/assets/163442344/8211ac9d-c121-4507-8a2c-868daec0c729)
+
+
