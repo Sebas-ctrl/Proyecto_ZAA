@@ -34,6 +34,5 @@ Optimizar la adquisición, administración y distribución de los recursos mater
 #
 ## Alcance y Vision del area de Recursos Materiales 
 Gestionar de manera integral y eficiente todos los recursos materiales del gimnasio, desde el inventario y préstamos hasta el mantenimiento y control de calidad, con el objetivo de garantizar un entorno óptimo para los usuarios y una operación fluida y segura.
-## Prueba de Commits jajajaj 
-
-
+# Acerca del Proyecto
+El proyecto tiene como proposito una innovacion en la administración de un gimnasio, sin embargo el Area de Recursos Materiales en el gimnasio tiene como finalidad implementar un sistema integral para gestionar de manera eficiente todos los equipos, consumibles y materiales necesarios para el funcionamiento óptimo de nuestras instalaciones.
