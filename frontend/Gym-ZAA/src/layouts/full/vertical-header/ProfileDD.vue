@@ -63,7 +63,7 @@ const authStore = useAuthStore();
                 </div>
             </div>
             <div class="pt-4 pb-6 px-8 text-center">
-                <v-btn color="primary" variant="outlined" block @click="authStore.logout()">Logout</v-btn>
+                <v-btn color="primary" variant="outlined" block @click="authStore.logout()">Salir</v-btn>
             </div>
         </v-sheet>
     </v-menu>
