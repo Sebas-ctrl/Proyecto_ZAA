@@ -53,20 +53,20 @@ import proUser3 from '@/assets/images/svgs/icon-tasks.svg';
 const profileDD: profileType[] = [
     {
         avatar: proUser1,
-        title: 'My Profile',
-        subtitle: 'Account settings',
+        title: 'Mi perfil',
+        subtitle: 'Configuracion de cuenta',
         href: '/apps/profile'
     },
     {
         avatar: proUser2,
-        title: 'My Inbox',
-        subtitle: 'Messages & Emails',
+        title: 'Bandeja de entrada',
+        subtitle: 'Mensajes y correo',
         href: '/apps/inbox'
     },
     {
         avatar: proUser3,
-        title: 'My Tasks',
-        subtitle: 'To-do and Daily tasks',
+        title: 'Tareas',
+        subtitle: 'Tareas pendientes',
         href: '/apps/task'
     }
 ];
