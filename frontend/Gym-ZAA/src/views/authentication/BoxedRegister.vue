@@ -14,8 +14,8 @@ import RegisterForm from '@/components/auth/RegisterForm.vue';
                             <!-- <div class="text-h6 text-medium-emphasis text-center mb-6">Your Social Campaigns</div> -->
                             <RegisterForm />
                             <h6 class="text-h6 text-medium-emphasis d-flex justify-center align-center mt-3">
-                                Already have an Account?
-                                <v-btn variant="plain" to="/auth/login2" class="text-primary text-body-1 opacity-1 pl-2">Sign In</v-btn>
+                                Ya tienes cuenta?
+                                <v-btn variant="plain" to="/auth/login2" class="text-primary text-body-1 opacity-1 pl-2">Inicia Sesión</v-btn>
                             </h6>
                         </v-card-item>
                     </v-card>

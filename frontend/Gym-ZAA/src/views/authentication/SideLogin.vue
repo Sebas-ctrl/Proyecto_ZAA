@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Logo from '@/layouts/full/logo/Logo.vue';
+// import Logo from '@/layouts/full/logo/Logo.vue';
 /* Login form */
 import LoginForm from '@/components/auth/LoginForm.vue';
 </script>
@@ -21,13 +21,14 @@ import LoginForm from '@/components/auth/LoginForm.vue';
             </v-col>
             <v-col cols="12" lg="5" xl="4" class="d-flex align-center justify-center bg-surface">
                 <div class="mt-xl-0 mt-5 mw-100">
-                    <h2 class="text-h3 font-weight-semibold mb-2">Welcome to Flexy</h2>
-                    <div class="text-subtitle-1 mb-6">Your Admin Dashboard</div>
+                    <center>
+                    <h2 class="text-h3 font-weight-semibold mb-2">BIENVENIDO A MI SITIO</h2>
+                </center>
                     <LoginForm />
                     <h6 class="text-h6  text-medium-emphasis  d-flex align-center mt-6 font-weight-medium">
-                        New to Flexy?
+                        No tienes cuenta?
                         <v-btn class="pl-0 text-primary text-body-1 opacity-1 pl-2 font-weight-medium" height="auto"
-                            to="/auth/register" variant="plain">Create an account</v-btn>
+                            to="/auth/register" variant="plain">Crea tu cuenta</v-btn>
                     </h6>
                 </div>
             </v-col>

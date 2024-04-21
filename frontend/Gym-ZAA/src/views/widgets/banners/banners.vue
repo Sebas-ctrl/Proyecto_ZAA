@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import Banner1 from '@/components/widgets/banners/Banner1.vue';
 import Banner2 from "@/components/widgets/banners/Banner2.vue";
 import Banner3 from "@/components/widgets/banners/Banner3.vue";
-import Banner4 from "@/components/widgets/banners/Banner4.vue";
+// import Banner4 from "@/components/widgets/banners/Banner4.vue";
 import Banner5 from "@/components/widgets/banners/Banner5.vue";
 import Banner6 from "@/components/widgets/banners/Banner6.vue";
 /* Breadcrumb component */

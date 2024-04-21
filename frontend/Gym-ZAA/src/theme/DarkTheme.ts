@@ -184,7 +184,7 @@ const DARK_ORANGE_THEME: ThemeTypes = {
     },
     colors: {
         primary: '#fb9678',
-        secondary: '#03c9d7',
+        secondary: '#DD0000',
         info: '#539BFF',
         success: '#13DEB9',
         accent: '#FA896B',

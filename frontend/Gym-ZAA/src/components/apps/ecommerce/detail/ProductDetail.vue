@@ -88,11 +88,11 @@ function selectColor(e) {
                 </v-row>
                 <!-- <v-divider class="my-5"></v-divider> -->
                 <v-row class="mt-6">
-                    <v-col cols="12" sm="12">
+                    <!-- <v-col cols="12" sm="12">
                         <v-btn block size="large" color="primary" to="/ecommerce/checkout" @click="store.AddToCart(getProduct)"
                             >Agregar</v-btn
                         >
-                    </v-col>
+                    </v-col> -->
                         <!-- <v-col cols="12" sm="4">
                             <v-btn block size="large" color="secondary" @click="store.AddToCart(getProduct)">Add To Cart</v-btn>
                         </v-col> -->

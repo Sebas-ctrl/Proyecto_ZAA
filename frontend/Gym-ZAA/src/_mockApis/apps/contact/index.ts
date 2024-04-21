@@ -8,11 +8,21 @@ import user4 from '@/assets/images/profile/user-4.jpg';
 import user5 from '@/assets/images/profile/user-5.jpg';
 import user6 from '@/assets/images/profile/user-6.jpg';
 import user7 from '@/assets/images/profile/user-7.jpg';
-import user8 from '@/assets/images/profile/user-8.jpg';
-import user9 from '@/assets/images/profile/user-9.jpg';
-import user10 from '@/assets/images/profile/user-10.jpg';
 
 
+fetch('http://localhost:8000/gimnasio/api/v1Equipo/')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Error al obtener los registros');
+                }
+                return res.json();
+            })
+            .then(equipo => {
+		console.log(equipo)
+            })
+            .catch(error => {
+                console.error('Error al obtener los registros: ' + error);
+            });
 // types
 export type KeyedObject = {
     [key: string]: string | number | KeyedObject | any;
@@ -20,105 +30,48 @@ export type KeyedObject = {
 
 const contacts: KeyedObject[] = [
     {
-        id: '#123',
-        avatar: user1,
-        userinfo: 'Hanna Gover',
-        usermail: 'hgover@gmail.com',
-        phone: '+123 456 789',
+        id: '123',
+        userinfo: 'Minibandas',
+        phone: 'Las minibandas son bandas elásticas de resistencia compactas y versátiles, utilizadas para ejercicios de fuerza y ​​movilidad en rutinas de entrenamiento físico.',
         jdate: '12-10-2014',
-        role: 'Designer',
-        rolestatus: 'primary'
     },
     {
-        id: '#452',
-        avatar: user2,
-        userinfo: 'Daniel Kristeen',
-        usermail: 'hgover@gmail.com',
-        phone: '+234 456 789',
+        id: '452',
+        userinfo: 'Torre Inflable',
+        phone: 'Una torre inflable de gimnasio es un equipo de ejercicio que consiste en una estructura inflable con ',
         jdate: '10-09-2014',
-        role: 'Developer',
-        rolestatus: 'secondary'
     },
     {
-        id: '#565',
-        avatar: user3,
-        userinfo: 'Julian Josephs',
-        usermail: 'hgover@gmail.com',
-        phone: '+345 456 789',
+        id: '65',
+        userinfo: 'Bola Gimnasia',
+        phone: 'Una bola de gimnasia, también conocida como bola de estabilidad o fitball, es un equipo de entrenamiento que consiste en una pelota grande y resistente hecha de ',
         jdate: '01-10-2013',
-        role: 'Accountant',
-        rolestatus: 'error'
     },
     {
-        id: '#785',
-        avatar: user4,
-        userinfo: 'Jan Petrovic',
-        usermail: 'hgover@gmail.com',
-        phone: '+456 456 789',
+        id: '785',
+        userinfo: 'Mancuerna',
+        phone: 'Una mancuerna es un equipo de entrenamiento utilizado en ejercicios de fuerza que consiste en una barra corta con pesos en ambos extremos',
         jdate: '02-10-2017',
-        role: 'Designer',
-        rolestatus: 'success'
     },
     {
-        id: '#564',
-        avatar: user5,
-        userinfo: 'Leanne Graham',
-        usermail: 'hgover@gmail.com',
-        phone: '+567 456 789',
+        id: '564',
+        userinfo: 'Brincolin',
+        phone: 'Un brincolín de gimnasio es una estructura elástica y resistente que se utiliza para realizar ejercicios de saltos y rebotes. ',
         jdate: '10-9-2015',
-        role: 'HR',
-        rolestatus: 'info'
     },
     {
-        id: '#980',
-        avatar: user6,
-        userinfo: 'Mrs. Dennis Schulist',
-        usermail: 'hgover@gmail.com',
-        phone: '+678 456 789',
+        id: '980',
+        userinfo: 'Tabla Abdominal',
+        phone: 'Una tabla abdominal básica es un equipo de gimnasio diseñado específicamente para ejercitar los músculos abdominales. ',
         jdate: '10-5-2013',
-        role: 'Designer',
-        rolestatus: 'warning'
     },
     {
-        id: '#521',
-        avatar: user7,
-        userinfo: 'Kurtis Weissnat',
-        usermail: 'hgover@gmail.com',
-        phone: '+123 456 789',
+        id: '521',
+        userinfo: 'Liga de Resistencia',
+        phone: 'Una máquina para pectorales y brazos es un equipo de gimnasio diseñado específicamente para fortalecer los músculos del pecho y los brazos.',
         jdate: '05-10-2012',
-        role: 'Manager',
-        rolestatus: 'primary'
     },
-    {
-        id: '#450',
-        avatar: user8,
-        userinfo: 'Nicholas Runolfsdottir V',
-        usermail: 'hgover@gmail.com',
-        phone: '+234 456 789',
-        jdate: '11-10-2014',
-        role: 'Chairman',
-        rolestatus: 'secondary'
-    },
-    {
-        id: '#212',
-        avatar: user9,
-        userinfo: 'Glenna Reichert',
-        usermail: 'hgover@gmail.com',
-        phone: '+345 456 789',
-        jdate: '12-5-2017',
-        role: 'Designer',
-        rolestatus: 'error'
-    },
-    {
-        id: '#152',
-        avatar: user10,
-        userinfo: 'Clementina DuBuque',
-        usermail: 'hgover@gmail.com',
-        phone: '+456 456 789',
-        jdate: '18-5-2009',
-        role: 'Developer',
-        rolestatus: 'success'
-    }
+    
 ];
 
 // ==============================|| MOCK SERVICES ||============================== //

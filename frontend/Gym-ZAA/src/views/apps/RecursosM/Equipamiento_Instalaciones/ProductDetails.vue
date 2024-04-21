@@ -12,6 +12,7 @@ import BlogCard from "@/components/dashboards/analytical/BlogCard.vue";
 import WeeklyStats from "@/components/dashboards/analytical/WeeklyStats.vue";
 import DailyActivities from "@/components/dashboards/analytical/DailyActivities.vue";
 
+
 const page = ref({ title: "EQUIPOS GIMNASIO" });
 const breadcrumbs = ref([
   
@@ -69,3 +70,6 @@ const breadcrumbs = ref([
     </v-col>
   </v-row>
 </template>
+
+
+
